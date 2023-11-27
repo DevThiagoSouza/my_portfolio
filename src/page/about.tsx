@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Heading,
@@ -11,109 +11,89 @@ import {
   Link,
   Badge,
   useColorModeValue,
-} from '@chakra-ui/react'
-import Eu from "../components/img/eu-eu-fundo.png"
+} from "@chakra-ui/react";
+import Eu from "../components/img/eu-eu-fundo.png";
 
 export default function About() {
   return (
     <Center py={6}>
       <Box
-        maxW={'620px'}
-        w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
-        boxShadow={'2xl'}
-        rounded={'lg'}
+        maxW={"620px"}
+        w={"full"}
+        bg={useColorModeValue("white", "gray.900")}
+        boxShadow={"2xl"}
+        rounded={"lg"}
         p={6}
-        textAlign={'center'}>
+        textAlign={"center"}
+      >
         <Avatar
-          size={'xl'}
-          src={
-            Eu
-          }
+          size={"xl"}
+          src={Eu}
           mb={4}
-          pos={'relative'}
+          pos={"relative"}
           _after={{
             content: '""',
             w: 4,
             h: 4,
-            bg: 'green.300',
-            border: '2px solid white',
-            rounded: 'full',
-            pos: 'absolute',
+            rounded: "full",
+            pos: "absolute",
             bottom: 0,
             right: 3,
           }}
         />
-        <Heading fontSize={'2xl'} fontFamily={'body'}>
+        <Heading fontSize={"2xl"} fontFamily={"body"}>
           Thiago Soares de Souza
         </Heading>
         {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
           @lindsey_jam3s
         </Text> */}
         <Text
-          textAlign={'center'}
-          color={useColorModeValue('gray.700', 'gray.400')}
-          px={3}>
-          age: 29,<br/>
-           Address: Av. Santa Elisa,<br/>
-           City: Jundiai-SP,<br/>
-              {' '}
-          
+          textAlign={"center"}
+          color={useColorModeValue("gray.700", "gray.400")}
+          px={3}
+        >
+          age: 29,
+          <br />
+          Address: Av. Santa Elisa,
+          <br />
+          City: Jundiai-SP,
+          <br />
+          Country: Brazil{" "}
         </Text>
 
-        {/* <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #art
-          </Badge>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #photography
-          </Badge>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #music
-          </Badge>
-        </Stack> */}
+        <Heading fontSize={"2xl"} fontFamily={"body"}>
+          About
+        </Heading>
+        {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
+          @lindsey_jam3s
+        </Text> */}
+        <Text
+          textAlign={"center"}
+          color={useColorModeValue("gray.700", "gray.400")}
+          px={3}
+        >
+          Passionate about technology, I always seek more knowledge in the area,
+          studying and participating in workshops. Although I have never worked
+          directly in the area, in my professional experiences, my knowledge has
+          always helped in situations that required more technical knowledge. I
+          also add experience with customer service.{" "}
+        </Text>
 
-        {/* <Stack mt={8} direction={'row'} spacing={4}>
-          <Button
-            flex={1}
-            fontSize={'sm'}
-            rounded={'full'}
-            _focus={{
-              bg: 'gray.200',
-            }}>
-            Message
-          </Button>
-          <Button
-            flex={1}
-            fontSize={'sm'}
-            rounded={'full'}
-            bg={'blue.400'}
-            color={'white'}
-            boxShadow={
-              '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
-            }
-            _hover={{
-              bg: 'blue.500',
-            }}
-            _focus={{
-              bg: 'blue.500',
-            }}>
-            Follow
-          </Button>
-        </Stack> */}
+        <Heading fontSize={"2xl"} fontFamily={"body"}>
+          Activities and Interests
+        </Heading>
+        {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
+          @lindsey_jam3s
+        </Text> */}
+        <Text
+          textAlign={"center"}
+          color={useColorModeValue("gray.700", "gray.400")}
+          px={3}
+        >
+          I love playing video games, playing football, skateboarding, reading
+          good books, studying new technologies, listening to music{" "}
+        </Text>
       </Box>
     </Center>
-  )
+  );
 }
