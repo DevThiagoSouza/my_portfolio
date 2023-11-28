@@ -21,8 +21,8 @@ export const App = () => (
   <ChakraProvider theme={theme}>
     <Nav />
     {/* <Hero /> */}
-    {/* <About/> */}
+    <About/>
     {/* <Curriculum/> */}
-    <Skiil/>
+    {/* <Skiil/> */}
   </ChakraProvider>
 );

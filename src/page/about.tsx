@@ -11,8 +11,16 @@ import {
   Link,
   Badge,
   useColorModeValue,
+  Icon,
 } from "@chakra-ui/react";
 import Eu from "../components/img/eu-eu-fundo.png";
+import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+
+import { SiPlaystation } from "react-icons/si";
+import { DiCode } from "react-icons/di";
+import { CgCoffee } from "react-icons/cg";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaGamepad } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -44,9 +52,6 @@ export default function About() {
         <Heading fontSize={"2xl"} fontFamily={"body"}>
           Thiago Soares de Souza
         </Heading>
-        {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
-          @lindsey_jam3s
-        </Text> */}
         <Text
           textAlign={"center"}
           color={useColorModeValue("gray.700", "gray.400")}
@@ -61,12 +66,9 @@ export default function About() {
           Country: Brazil{" "}
         </Text>
 
-        <Heading fontSize={"2xl"} fontFamily={"body"}>
+        <Heading fontSize={"2xl"} fontFamily={"body"} marginTop={7}>
           About
         </Heading>
-        {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
-          @lindsey_jam3s
-        </Text> */}
         <Text
           textAlign={"center"}
           color={useColorModeValue("gray.700", "gray.400")}
@@ -79,12 +81,9 @@ export default function About() {
           also add experience with customer service.{" "}
         </Text>
 
-        <Heading fontSize={"2xl"} fontFamily={"body"}>
+        <Heading fontSize={"2xl"} fontFamily={"body"} marginTop={7}>
           Activities and Interests
         </Heading>
-        {/* <Text fontWeight={600} color={'gray.500'} mb={4}>
-          @lindsey_jam3s
-        </Text> */}
         <Text
           textAlign={"center"}
           color={useColorModeValue("gray.700", "gray.400")}
@@ -93,6 +92,25 @@ export default function About() {
           I love playing video games, playing football, skateboarding, reading
           good books, studying new technologies, listening to music{" "}
         </Text>
+        <Stack direction={{base:"column" ,md:"row"}} padding="2em 2em" gap="1em">
+          <Icon as={HiOutlineMail} w={7} h={7} />
+          <Text>thiago.soares.de.souza@hotmail.com</Text>
+          <Icon as={HiOutlinePhone} w={7} h={7} />
+          <Text>+55 (11)973603554 </Text>
+        </Stack>
+        <Stack
+          direction="row"
+          padding="2em 2em"
+          gap="1em"
+          display="flex"
+          justifyContent="center"
+        >
+          <Icon as={FaGamepad} w={10} h={10} />
+          <Icon as={SiPlaystation} w={10} h={10} />
+          <Icon as={DiCode} w={10} h={10} />
+          <Icon as={CgCoffee} w={10} h={10} />
+          <Icon as={FaLaptopCode} w={10} h={10} />
+        </Stack>
       </Box>
     </Center>
   );
