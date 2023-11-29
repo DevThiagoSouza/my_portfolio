@@ -28,6 +28,8 @@ import {
   SiGit,
   SiGithub,
   SiBitbucket,
+  SiLinux ,
+  SiWindows 
 } from "react-icons/si";
 
 import {
@@ -48,6 +50,7 @@ interface CardProps {
 const Card = ({ heading, icon, href }: CardProps) => {
   return (
     <Box
+    id="skill"
       maxW={{ base: "full", md: "275px" }}
       w={"full"}
       borderWidth="1px"
@@ -259,6 +262,29 @@ export default function Skiil() {
           <Card
             heading={"Bitbucket"}
             icon={<Icon as={SiBitbucket} w={10} h={10} _hover={{color:"#2d88ff"}} />}
+            href={"#"}
+          />
+        </Flex>
+      </Container>
+      <Heading
+        fontSize={{ base: "2xl", sm: "4xl" }}
+        fontWeight={"bold"}
+        textAlign="center"
+        marginTop="2em"
+      >
+        Operational System
+      </Heading>
+
+      <Container maxW={"5xl"} mt={12}>
+        <Flex flexWrap="wrap" gridGap={6} justify="center">
+          <Card
+            heading={"Linux"}
+            icon={<Icon as={SiLinux} w={10} h={10} _hover={{color:"#000000"}} />}
+            href={"#"}
+          />
+          <Card
+            heading={"Windows"}
+            icon={<Icon as={SiWindows } w={10} h={10} _hover={{color:"#0078d7"}} />}
             href={"#"}
           />
         </Flex>

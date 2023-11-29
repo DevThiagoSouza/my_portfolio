@@ -22,13 +22,17 @@ import {
 import Eu from "../components/img/fundo.png";
 import About from "./about";
 
+
+
 export default function Hero() {
   const boxWidth = useBreakpointValue({ base: "90vw", md: "45vw" });
   const boxHeight = useBreakpointValue({ base: "30vh", md: "50vh" });
-  const margin = useBreakpointValue({ base: "1em", md: "15em" });
+  const margin = useBreakpointValue({ base: "1em", md: "13em" });
+
+
 
   return (
-    <Stack maxH={"90vh"} direction={{ base: "column", md: "row" }} >
+    <Stack maxH={"90vh"} direction={{ base: "column", md: "row" }}  id="hero">
       <Flex p={8} flex={1} align={"center"} justify={"center"}  overflow="hidden">
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
@@ -58,9 +62,9 @@ export default function Hero() {
             Through this portfolio I will show a little about myself and my
             experiences
           </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Link
-              href="./about"
+          <Stack direction={{ base: "column", md: "row" }} spacing={4}>          
+            <Link           
+              href="/about"
               padding={".5rem 1rem"}
               fontWeight={"medium"}
               rounded={"full"}
@@ -73,7 +77,7 @@ export default function Hero() {
               More about Thiago
             </Link>
 
-            <Button rounded={"full"}>My skills</Button>
+            <Button rounded={"full"} as={Link} href="./skill.tsx" >My skills</Button>
           </Stack>
           <Stack direction="row" gap="1em">
             <Link href="https://www.linkedin.com/in/thiago-soares-692a94145/">

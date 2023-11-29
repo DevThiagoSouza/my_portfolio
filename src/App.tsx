@@ -20,9 +20,9 @@ import Skiil from "./page/skill";
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Nav />
-    {/* <Hero /> */}
-    <About/>
-    {/* <Curriculum/> */}
-    {/* <Skiil/> */}
+    <Hero />
+    {/* <About/>
+    <Curriculum/>
+    <Skiil/>    */}
   </ChakraProvider>
 );

@@ -24,7 +24,7 @@ import Eu from "../components/img/eu-eu-fundo.png";
 
 export default function Curriculum() {
   return (
-    <Container maxW={"7xl"}>
+    <Container maxW={"7xl"} id="curriculum">
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}

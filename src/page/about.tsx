@@ -24,7 +24,7 @@ import { FaGamepad } from "react-icons/fa";
 
 export default function About() {
   return (
-    <Center py={6}>
+    <Center py={6} id="about">
       <Box
         maxW={"620px"}
         w={"full"}
