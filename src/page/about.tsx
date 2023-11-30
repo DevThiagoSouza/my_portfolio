@@ -12,6 +12,7 @@ import {
   Badge,
   useColorModeValue,
   Icon,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Eu from "../components/img/eu-eu-fundo.png";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -21,10 +22,13 @@ import { DiCode } from "react-icons/di";
 import { CgCoffee } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaGamepad } from "react-icons/fa";
+import React from "react";
 
 export default function About() {
+
   return (
-    <Center py={6} id="about">
+    <>
+    <Center py={6} id="about" >
       <Box
         maxW={"620px"}
         w={"full"}
@@ -113,5 +117,6 @@ export default function About() {
         </Stack>
       </Box>
     </Center>
+    </>
   );
 }

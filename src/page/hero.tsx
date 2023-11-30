@@ -12,6 +12,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  useDisclosure,
 } from "@chakra-ui/react";
 import {
   AiFillLinkedin,
@@ -20,8 +21,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import Eu from "../components/img/fundo.png";
+import React from "react";
 import About from "./about";
-
 
 
 export default function Hero() {
@@ -30,10 +31,16 @@ export default function Hero() {
   const margin = useBreakpointValue({ base: "1em", md: "13em" });
 
 
-
   return (
-    <Stack maxH={"90vh"} direction={{ base: "column", md: "row" }}  id="hero">
-      <Flex p={8} flex={1} align={"center"} justify={"center"}  overflow="hidden">
+    <>
+    <Stack maxH={"90vh"} direction={{ base: "column", md: "row" }} id="hero">
+      <Flex
+        p={8}
+        flex={1}
+        align={"center"}
+        justify={"center"}
+        overflow="hidden"
+      >
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
@@ -62,10 +69,11 @@ export default function Hero() {
             Through this portfolio I will show a little about myself and my
             experiences
           </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>          
-            <Link           
-              href="/about"
-              padding={".5rem 1rem"}
+          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+            <Button
+               as="a"
+              href="#about"
+           //   padding={".5rem 1rem"}
               fontWeight={"medium"}
               rounded={"full"}
               bg={"blue.400"}
@@ -73,11 +81,14 @@ export default function Hero() {
               _hover={{
                 bg: "blue.500",
               }}
+             
             >
               More about Thiago
-            </Link>
-
-            <Button rounded={"full"} as={Link} href="./skill.tsx" >My skills</Button>
+            </Button>
+            
+            <Button rounded={"full"} as={Link} href="/skill">
+              My skills
+            </Button>
           </Stack>
           <Stack direction="row" gap="1em">
             <Link href="https://www.linkedin.com/in/thiago-soares-692a94145/">
@@ -111,7 +122,7 @@ export default function Hero() {
           </Stack>
         </Stack>
       </Flex>
-      <Flex flex={1}>
+      <Flex flex={1} >
         <Box
           bgColor={"blue.400"}
           width={boxWidth}
@@ -122,9 +133,10 @@ export default function Hero() {
           display="flex"
           justifyContent="center"
         >
-          <Image alt={"Login Image"} objectFit={"cover"} src={Eu} />
+          <Image alt={""} objectFit={"cover"} src={Eu} />
         </Box>
       </Flex>
     </Stack>
+    </>
   );
 }
