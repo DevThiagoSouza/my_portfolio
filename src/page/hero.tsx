@@ -3,6 +3,7 @@
 import {
   Box,
   Button,
+  Divider,
   Flex,
   HStack,
   Heading,
@@ -86,11 +87,11 @@ export default function Hero() {
               More about Thiago
             </Button>
             
-            <Button rounded={"full"} as={Link} href="/skill">
+            <Button rounded={"full"} as={Link} href="#skill">
               My skills
             </Button>
           </Stack>
-          <Stack direction="row" gap="1em">
+          <Stack direction="row" gap="1em" justifyContent={{base:"center" , md:"start"}} display="flex">
             <Link href="https://www.linkedin.com/in/thiago-soares-692a94145/">
               <Icon
                 as={AiFillLinkedin}
@@ -137,6 +138,7 @@ export default function Hero() {
         </Box>
       </Flex>
     </Stack>
+    <Divider orientation="horizontal" marginTop="5em" />
     </>
   );
 }

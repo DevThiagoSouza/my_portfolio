@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   Icon,
   useDisclosure,
+  Divider,
 } from "@chakra-ui/react";
 import Eu from "../components/img/eu-eu-fundo.png";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -97,10 +98,14 @@ export default function About() {
           good books, studying new technologies, listening to music{" "}
         </Text>
         <Stack direction={{base:"column" ,md:"row"}} padding="2em 2em" gap="1em">
+          <Box justifyContent="center" display="flex" gap="1em">
           <Icon as={HiOutlineMail} w={7} h={7} />
           <Text>thiago.soares.de.souza@hotmail.com</Text>
+          </Box>
+          <Box justifyContent="center" display="flex" gap="1em">
           <Icon as={HiOutlinePhone} w={7} h={7} />
           <Text>+55 (11)973603554 </Text>
+          </Box>
         </Stack>
         <Stack
           direction="row"
@@ -117,6 +122,7 @@ export default function About() {
         </Stack>
       </Box>
     </Center>
+    <Divider orientation="horizontal" marginTop="5em" />
     </>
   );
 }

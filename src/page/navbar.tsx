@@ -122,10 +122,10 @@ export default function Nav() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>My curriculum</MenuItem>
+                <MenuItem as={Link} href="#curriculum">My curriculum</MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://drive.google.com/file/d/1BrtxW7mr_LYMUP1iiAUOlF4HFygKNeb9/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1d95TJBtFJ80Oaa0PCIL7x5xrQhD5UaVB/view?usp=sharing" 
                   download
                 >
                   My curriculum in PDF

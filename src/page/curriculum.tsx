@@ -24,7 +24,8 @@ import Eu from "../components/img/eu-eu-fundo.png";
 
 export default function Curriculum() {
   return (
-    <Container maxW={"7xl"} id="curriculum">
+    <>
+    <Container maxW={"7xl"} id="curriculum" marginTop="5em">
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
@@ -33,12 +34,12 @@ export default function Curriculum() {
         <Flex>
           <Image
             rounded={"md"}
-            alt={"product image"}
+            alt={""}
             src={Eu}
             fit={"cover"}
             align={"center"}
-            w={"100%"}
-            h={{ base: "100%", sm: "400px", lg: "500px" }}
+            w={"70%"}
+            h={{ base: "100%", sm: "500px", lg: "500px" }}
           />
         </Flex>
         <Stack spacing={{ base: 6, md: 10 }}>
@@ -68,7 +69,7 @@ export default function Curriculum() {
               />
             }
           >
-            
+
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
@@ -256,5 +257,7 @@ export default function Curriculum() {
         </Stack>
       </SimpleGrid>
     </Container>
+    <Divider orientation="horizontal" marginTop="5em" />
+    </>
   );
 }

@@ -1,4 +1,3 @@
-"use client";
 
 import {
   Box,
@@ -92,7 +91,7 @@ const Card = ({ heading, icon, href }: CardProps) => {
 export default function Skiil() {
   return (
     <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} id="skill">
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           Slills
         </Heading>
@@ -181,7 +180,7 @@ export default function Skiil() {
           <Card
             heading={"SpringBoot"}
             icon={
-              <Icon as={SiSpring} w={10} h={10} _hover={{ color: "#61ae29" }} />
+              <Icon as={SiSpring } w={10} h={10} _hover={{ color: "#61ae29" }} />
             }
             href={"#"}
           />
