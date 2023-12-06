@@ -106,14 +106,14 @@ export default function Hero() {
                 _hover={{ marginTop: "-0.8em", transition: "0.8s" }}
               ></Icon>
             </Link>
-            <Link href="">
+            <Link href="https://www.facebook.com/thiaguinho.soares.37?mibextid=ZbWKwL">
               <Icon
                 as={AiFillFacebook}
                 boxSize="2em"
                 _hover={{ marginTop: "-0.8em", transition: "0.8s" }}
               ></Icon>
             </Link>
-            <Link href="">
+            <Link href="https://instagram.com/_thiaguinho_souza_?igshid=MzMyNGUyNmU2YQ==">
               <Icon
                 as={AiFillInstagram}
                 boxSize="2em"
