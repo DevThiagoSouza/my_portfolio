@@ -136,7 +136,7 @@ export default function Curriculum() {
                   <Text as={"span"} fontWeight={"bold"}>
                     Complementary course :
                   </Text>{" "}
-                  Desemvolvimeto Android e ios com Flutter 2021 - Instituição
+                  Desenvolvimeto Android e ios com Flutter 2021 - Instituição
                   Udemy
                 </ListItem>
               </List>

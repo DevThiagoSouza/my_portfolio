@@ -125,7 +125,7 @@ export default function Nav() {
                 <MenuItem as={Link} href="#curriculum">My curriculum</MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://drive.google.com/file/d/1d95TJBtFJ80Oaa0PCIL7x5xrQhD5UaVB/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/15vGK_DYOaSWeLR6iWkZdrrW4VumiL_h1/view?usp=sharing" 
                   download
                 >
                   My curriculum in PDF

@@ -93,11 +93,10 @@ export default function Skiil() {
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} id="skill">
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
-          Slills
+          Skill
         </Heading>
         <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
-          programming libguem, library and frameworks that I have worked and
-          studied
+          language program, library and frameworks that I have worked.
         </Text>
       </Stack>
       <Heading
@@ -180,7 +179,7 @@ export default function Skiil() {
           <Card
             heading={"SpringBoot"}
             icon={
-              <Icon as={SiSpring } w={10} h={10} _hover={{ color: "#61ae29" }} />
+              <Icon as={SiSpring} w={10} h={10} _hover={{ color: "#61ae29" }} />
             }
             href={"#"}
           />
