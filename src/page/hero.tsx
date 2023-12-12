@@ -27,7 +27,7 @@ import About from "./about";
 
 
 export default function Hero() {
-  const boxWidth = useBreakpointValue({ base: "90vw", md: "45vw" });
+  const boxWidth = useBreakpointValue({ base: "100vw", md: "45vw" });
   const boxHeight = useBreakpointValue({ base: "30vh", md: "50vh" });
   const margin = useBreakpointValue({ base: "1em", md: "13em" });
 
