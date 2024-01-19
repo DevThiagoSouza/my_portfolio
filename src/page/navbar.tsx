@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Flex,
@@ -45,7 +43,7 @@ const NavLink = (props: Props) => {
         textDecoration: "none",
         bg: useColorModeValue("gray.200", "gray.700"),
       }}
-      href={"#"}
+      href={"#hero"}
     >
       {children}
     </Box>
@@ -56,17 +54,11 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const color = "teal";
-  const pulseRing = keyframes`
-  0%{
-    transform: scaleFadeConfig(0.33),
-  }
-  40%,
-  50%{
-    opacity: 0,
-  }
-  100%{
-    opacity: 0,
-  }`;
+  const gradientAnimation = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`
 
   return (
     <>
@@ -96,6 +88,11 @@ export default function Nav() {
           <ColorModeSwitcher />
             <Menu>
               <MenuButton
+                    bgImage="radial-gradient(#2169c4 50%, rgba(84, 164, 230, 0.4) 52%)"
+                    backgroundSize="200% 200%"
+                    animation={`${gradientAnimation} 3s linear infinite`}
+                    h="4.5vh"
+                    w="2vw"
                 as={Button}
                 rounded={"full"}
                 variant={"link"}
@@ -108,11 +105,12 @@ export default function Nav() {
                   display: "block",
                   boxSizing: "border-box",
                   bgColor: color,
-                  animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
+            
                 }}
               >
                 
                 <Avatar
+                
                   size={"sm"}
 
                   // src={
