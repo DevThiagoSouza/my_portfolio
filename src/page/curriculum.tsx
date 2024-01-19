@@ -139,6 +139,66 @@ export default function Curriculum() {
                   Desenvolvimeto Android e ios com Flutter 2021 - Instituição
                   Udemy
                 </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  AWS Discovery Day - Instituição Ka Solution
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  C# Curso Completo do Básico ao Avançado - Instituição Udemy
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Desenvolvendo a Blockchain - Instituição Senai São Paulo
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Produtividade com VSCode - Instituição Cod3r
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Python 3 - Curso Rápido [2020] - Instituição Cod3r
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Fundamentos de Javascript Funcional - Instituição Cod3r
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Linguagem de Programação C# - Avançado - Instituição Fundação Bradesco
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Bootcamp: IA Generativa com AWS - Instituição Trybe
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Cybersecurity - Instituição Fiap
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Complementary course :
+                  </Text>{" "}
+                  Cloud Fudamentals, Administration and Solution Architect - Instituição Fiap
+                </ListItem>
               </List>
             </Box>
 
