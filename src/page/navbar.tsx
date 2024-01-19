@@ -88,11 +88,11 @@ export default function Nav() {
           <ColorModeSwitcher />
             <Menu>
               <MenuButton
-                    bgImage="radial-gradient(#2169c4 50%, rgba(84, 164, 230, 0.4) 52%)"
-                    backgroundSize="200% 200%"
-                    animation={`${gradientAnimation} 3s linear infinite`}
-                    h="4.5vh"
-                    w="2vw"
+                 bgImage="radial-gradient(#2169c4 50%, rgba(84, 164, 230, 0.4) 52%)"
+                 backgroundSize="200% 200%"
+                 animation={`${gradientAnimation} 3s linear infinite`}
+                 h={{base:"4.5vh", md:"4.5vh", lg:"4vh",xl:"4vh"}}
+                 w="100%"
                 as={Button}
                 rounded={"full"}
                 variant={"link"}
@@ -113,10 +113,6 @@ export default function Nav() {
                 
                   size={"sm"}
 
-                  // src={
-                  //   'https://www.linkedin.com/in/thiago-soares-692a94145/'
-
-                  // }
                 />
               </MenuButton>
               <MenuList>

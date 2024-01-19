@@ -29,6 +29,8 @@ import {
   SiBitbucket,
   SiLinux,
   SiWindows,
+  SiFlutter,
+  SiDart ,
 } from "react-icons/si";
 
 import {
@@ -199,6 +201,40 @@ export default function Skiil() {
           />
         </Flex>
       </Container>
+
+      <Heading
+        fontSize={{ base: "2xl", sm: "4xl" }}
+        fontWeight={"bold"}
+        textAlign="center"
+        marginTop="2em"
+      >
+        Mobile
+      </Heading>
+
+      <Container maxW={"5xl"} mt={12}>
+        <Flex flexWrap="wrap" gridGap={6} justify="center">
+          <Card
+            heading={"Flutter"}
+            icon={
+              <Icon as={SiFlutter } w={10} h={10} _hover={{ color: "#087dd7" }} />
+            }
+            href={"#"}
+          />
+          <Card
+            heading={"Dart"}
+            icon={
+              <Icon
+                as={SiDart}
+                w={10}
+                h={10}
+                _hover={{ color: "#087dd7" }}
+              />
+            }
+            href={"#"}
+          />
+        </Flex>
+      </Container>
+      
       <Heading
         fontSize={{ base: "2xl", sm: "4xl" }}
         fontWeight={"bold"}
