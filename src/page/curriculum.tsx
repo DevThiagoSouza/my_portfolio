@@ -142,18 +142,6 @@ export default function Curriculum() {
                   <Text as={"span"} fontWeight={"bold"}>
                     Complementary course :
                   </Text>{" "}
-                  AWS Discovery Day - Instituição Ka Solution
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Complementary course :
-                  </Text>{" "}
-                  C# Curso Completo do Básico ao Avançado - Instituição Udemy
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Complementary course :
-                  </Text>{" "}
                   Desenvolvendo a Blockchain - Instituição Senai São Paulo
                 </ListItem>
                 <ListItem>

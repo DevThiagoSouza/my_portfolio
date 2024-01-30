@@ -92,7 +92,7 @@ export default function Nav() {
                  backgroundSize="200% 200%"
                  animation={`${gradientAnimation} 3s linear infinite`}
                  h={{base:"4.5vh", md:"4.5vh", lg:"4vh",xl:"4vh"}}
-                 w="100%"
+                 w={{base:"11.5vw", sm:"5.5vw", md:"4.5vw", lg:"3.4vw", xl:"2vw"}}
                 as={Button}
                 rounded={"full"}
                 variant={"link"}
