@@ -21,8 +21,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import Eu from "../components/img/fundo.png";
-import React from "react";
+import React, { useEffect } from "react";
 import About from "./about";
+
 
 
 export default function Hero() {
@@ -30,9 +31,24 @@ export default function Hero() {
   const boxHeight = useBreakpointValue({ base: "30vh", md: "50vh" });
   const margin = useBreakpointValue({ base: "1em", md: "13em" });
 
+  
+  const { isOpen, onToggle } = useDisclosure();
+
+  useEffect(() => {
+    const timer = setInterval(onToggle, 1000); // Ajuste o intervalo para controlar a velocidade do piscar
+    return () => clearInterval(timer);
+  }, [onToggle]);
+
+
 
   return (
     <>
+        <Box
+      bg={isOpen ? "yellow.300" : "gray.300"} // Alterne entre as cores para simular o piscar
+      borderRadius="full"
+      w="10"
+      h="10"
+    />
     <Stack maxH={"90vh"} direction={{ base: "column", md: "row" }} id="hero">
       <Flex
         p={8}

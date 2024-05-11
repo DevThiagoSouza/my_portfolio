@@ -18,17 +18,22 @@ import {
   keyframes,
   scaleFadeConfig,
   Link,
+  useToast,
+  Alert,
+  AlertIcon,
+  Badge,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Curriculum from "./curriculum";
 import { link } from "fs";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import { useEffect } from "react";
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Links = ["Home"]; //'Projects', 'Contact'
+const Links = ["Home" ,'Projects', 'Contact'];
 
 const NavLink = (props: Props) => {
   const { children } = props;
@@ -59,10 +64,36 @@ export default function Nav() {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 `
+const toast = useToast();
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    toast({
+      title: "Currículo",
+      render: () => (
+        <Box color="white" p={3} borderRadius={15} bg="blue.500">
+          Download my CV <Link color="teal.300" href="https://drive.google.com/file/d/1evMy69hTLzMLXxZ2kxIEn6g7pawANAeF/view?usp=sharing">Here</Link> or on Profile
+        </Box>
+      ),
+      status: "info",
+      duration: 5000,
+      isClosable: true,
+    });
+  }, 30000); // Aparece a cada 30 segundos
+
+  return () => {
+    clearInterval(interval);
+  };
+}, []);
+
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} >
+      <Box bg={useColorModeValue("gray.100", "gray.900")} 
+       px={4} 
+       position="fixed"
+       width="100%"
+       zIndex="100">
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}  >
           <IconButton
             size={"md"}
@@ -108,7 +139,7 @@ export default function Nav() {
             
                 }}
               >
-                
+   
                 <Avatar
                 
                   size={"sm"}
@@ -116,19 +147,21 @@ export default function Nav() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem as={Link} href="#curriculum">My curriculum</MenuItem>
+              
+                <MenuItem as={Link} href="#curriculum">My CV</MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://drive.google.com/file/d/1evMy69hTLzMLXxZ2kxIEn6g7pawANAeF/view?usp=sharing" 
                   download
                 >
-                  My curriculum in PDF
+                 Download my CV
                 </MenuItem>
                 {/* <MenuDivider />
                 <MenuItem>Link 3</MenuItem> */}
               </MenuList>
             </Menu>
           </Flex>
+          
         </Flex>
 
         {isOpen ? (

@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Flex,
   Heading,
   Icon,
@@ -92,6 +93,7 @@ const Card = ({ heading, icon, href }: CardProps) => {
 
 export default function Skiil() {
   return (
+    <>
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} id="skill">
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
@@ -421,5 +423,7 @@ export default function Skiil() {
         </Flex>
       </Container>
     </Box>
+    <Divider orientation="horizontal" marginTop="5em" />
+    </>
   );
 }

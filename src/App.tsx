@@ -16,13 +16,23 @@ import Hero from "./page/hero";
 import About from "./page/about";
 import Curriculum from "./page/curriculum";
 import Skiil from "./page/skill";
+import Project from "./page/projects";
+import Contact from "./page/contact";
+import Footer from "./page/footer";
+
+
+
+
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Nav />
     <Hero />
     <About/>
+    <Project/>
     <Curriculum/>
-    <Skiil/>   
+    <Skiil/> 
+    <Contact/>
+    <Footer/>
   </ChakraProvider>
 );
