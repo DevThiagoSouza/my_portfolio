@@ -30,14 +30,9 @@ export default function Contact() {
   return (
     <>
     <Flex direction={{ base: "column", md: "row" }} justify="center" align="center">
-      <VStack spacing={5} marginRight={{ base: "0", md: "5" }}>
-        <Icon as={FaPhone} boxSize={6} />
-        <Icon as={FaWhatsapp} boxSize={6} />
-        <Icon as={FaEnvelope} boxSize={6} />
-      </VStack>
       <MotionBox
         marginTop="5em"
-        maxW={{ base: "90%", md: "30%" }}
+        maxW={{ base: "90%", md: "30%"}}
         mx="auto"
         p={5}
         borderWidth={2}
@@ -71,6 +66,15 @@ export default function Contact() {
           <Button colorScheme="blue" type="submit">
             Submit
           </Button>
+          <Stack spacing={5}
+           direction={{ base: "column", md: "row" }} 
+           display="flex" 
+           justifyContent="center">
+          
+        <Icon as={FaPhone} boxSize={6} />
+        <Icon as={FaWhatsapp} boxSize={6} />
+        <Icon as={FaEnvelope} boxSize={6} />
+      </Stack>
         </Stack>
       </MotionBox>
     </Flex>
