@@ -61,7 +61,7 @@ export default function About() {
           color={useColorModeValue("gray.700", "gray.400")}
           px={3}
         >
-          age: 29,
+          Age: 29,
           <br />
           Address: Av. Santa Elisa,
           <br />
