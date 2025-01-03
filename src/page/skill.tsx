@@ -43,6 +43,7 @@ import {
   DiReact,
   DiJava,
   DiGo ,
+  DiPostgresql,
 } from "react-icons/di";
 import { RiPulseFill } from "react-icons/ri";
 
@@ -312,13 +313,25 @@ export default function Skiil() {
             href={"#"}
           />
           <Card
-            heading={"Mongo DB"}
+            heading={"MongoDB"}
             icon={
               <Icon
                 as={SiMongodb}
                 w={10}
                 h={10}
                 _hover={{ color: "#55ad47" }}
+              />
+            }
+            href={"#"}
+          />
+              <Card
+            heading={"PostgreSQL"}
+            icon={
+              <Icon
+                as={DiPostgresql}
+                w={10}
+                h={10}
+                _hover={{ color: "#2f6792" }}
               />
             }
             href={"#"}
@@ -388,6 +401,18 @@ export default function Skiil() {
                 w={10}
                 h={10}
                 _hover={{ color: "#000000" }}
+              />
+            }
+            href={"#"}
+          />
+             <Card
+            heading={"GCP"}
+            icon={
+              <Icon
+                as={SiGooglecloud}
+                w={10}
+                h={10}
+                _hover={{ color: "#23b108" }}
               />
             }
             href={"#"}

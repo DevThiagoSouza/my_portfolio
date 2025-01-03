@@ -103,7 +103,7 @@ export default function Project() {
   return (
     <Box p={8} display="flex" flexDirection="column" justifyContent="center" id="projects">
       <Box mb={8} display="flex" justifyContent="center" w="full" marginBottom="5em">
-        <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} id="skill">
+        <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
           <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
             Projects
           </Heading>

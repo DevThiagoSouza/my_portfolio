@@ -14,6 +14,8 @@ import {
   Icon,
   Flex,
   useToast,
+  Container,
+  Heading,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaPhone, FaWhatsapp, FaEnvelope } from "react-icons/fa";
@@ -52,8 +54,6 @@ export default function Contact() {
             duration: 5000,
             isClosable: true,
           });
-
-          // Limpar os campos do formulário após o envio bem-sucedido
           setFormData({
             name: "",
             email: "",
@@ -78,6 +78,11 @@ export default function Contact() {
 
   return (
     <>
+      <Stack spacing={2} as={Container} maxW={"3xl"} textAlign={"center"} id="contact" marginTop="3em">
+        <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
+          Contact
+        </Heading>
+      </Stack>
       <Flex
         id="contact"
         direction={{ base: "column", md: "row" }}
@@ -88,7 +93,6 @@ export default function Contact() {
         px={{ base: "4", md: "8" }}
       >
         <MotionBox
-          marginTop="5em"
           maxW={{ base: "90%", sm: "80%", md: "60%", lg: "50%" }}
           w="full"
           mx="auto"

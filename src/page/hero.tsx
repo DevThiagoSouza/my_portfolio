@@ -27,30 +27,6 @@ export default function Hero() {
 
   const splitter = new GraphemeSplitter();
 
-  // Estado para alternar entre idiomas
-  const [languageIndex, setLanguageIndex] = useState(0);
-
-  // Lista de idiomas incluindo os novos (Chinês, Japonês, Coreano)
-  const languages = [
-    "Welcome to my portfolio", // Em inglês
-    "Bienvenido a mi portafolio", // Em espanhol
-    "Bienvenue sur mon portfolio", // Em francês
-    "Bem-vindo ao meu portfólio", // Em português
-    "Willkommen in meinem Portfolio", // Em alemão
-    "欢迎来到我的作品集", // Chinês
-    "私のポートフォリオへようこそ", // Japonês
-    "나의 포트폴리오에 오신 것을 환영합니다", // Coreano
-  ];
-
-  // Função para alternar a linguagem a cada 5 segundos
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
-    }, 3000); // Troca de idioma a cada 5 segundos
-
-    return () => clearInterval(interval); // Limpeza do intervalo
-  }, []);
-
   return (
     <>
       <Box
@@ -88,20 +64,20 @@ export default function Hero() {
                   repeat={Infinity} 
                   sequence={[
                     "Welcome",
-                    2000,  // Em inglês
+                    2000, 
                     "Bienvenido",
-                    1000,  // Em espanhol
+                    1000, 
                     "Bienvenue",
-                    2000,  // Em francês
+                    2000, 
                     "Bem-vindo",
-                    2000,  // Em português
+                    2000, 
                     "Willkommen",
-                    1000,  // Em alemão
+                    1000, 
                     "欢迎 ",
-                    1500,  // Chinês
+                    1500, 
                     "ようこそ",
-                    1000,  // Japonês
-                    "환영합니다", // Coreano
+                    1000, 
+                    "환영합니다",
                     1000, 
                   ]}
                   wrapper="span"
@@ -116,20 +92,20 @@ export default function Hero() {
                   repeat={Infinity}
                   sequence={[
                     " to my portfolio",
-                    1000,  // Em inglês
+                    1000, 
                     " a mi portafolio",
-                    1000,  // Em espanhol
+                    1000, 
                     " sur mon portfolio",
-                    1000,  // Em francês
+                    1000, 
                     " ao meu portfólio",
-                    1000,  // Em português
+                    1000,
                     " in meinem Portfolio",
-                    1000,  // Em alemão
+                    1000,
                     "欢迎我的作品集",
-                    1000,  // Chinês
+                    1000,
                     "私のポートフォリオへ",
-                    1000,  // Japonês
-                    " 제 포트폴리오에", // Coreano
+                    1000,
+                    " 제 포트폴리오에",
                     1000, 
                   ]}
                   wrapper="span"
@@ -158,7 +134,7 @@ export default function Hero() {
                 More about Thiago
               </Button>
 
-              <Button rounded={"full"} as={Link} href="#skill">
+              <Button rounded={"full"} as={Link} href="#skill" bgColor={"gray.600"} _hover={{textDecoration:"none", bg: "gray.5      00"}}>
                 My skills
               </Button>
             </Stack>
