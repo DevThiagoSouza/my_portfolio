@@ -79,7 +79,7 @@ useEffect(() => {
       duration: 5000,
       isClosable: true,
     });
-  }, 30000); // Aparece a cada 30 segundos
+  }, 30000);
 
   return () => {
     clearInterval(interval);

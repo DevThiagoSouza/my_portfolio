@@ -115,6 +115,12 @@ export default function Curriculum() {
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
+                  Post Graduation :
+                  </Text>{" "}
+                  Software Architecture - FIAP (CURSANDO)
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
                     Complementary course :
                   </Text>{" "}
                   AWS Discovery Day - Instituição KA Solution
@@ -201,6 +207,20 @@ export default function Curriculum() {
               </Text>
 
               <List spacing={2}>
+              <Divider orientation="horizontal" />
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Empresa :
+                  </Text>{" "}
+                  Summit-Bra LTDA
+                </ListItem>
+                <ListItem>
+                  <Text as={"span"} fontWeight={"bold"}>
+                    Cargo :
+                  </Text>{" "}
+                  Api Developer
+                </ListItem>
+                <Divider orientation="horizontal" />
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
                     Empresa :
@@ -224,7 +244,7 @@ export default function Curriculum() {
                   <Text as={"span"} fontWeight={"bold"}>
                     Cargo :
                   </Text>{" "}
-                  Desenvolvedor de Software jr
+                  Desenvolvedor de Software
                 </ListItem>
                 <Divider orientation="horizontal" />
                 <ListItem>

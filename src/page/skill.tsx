@@ -32,6 +32,7 @@ import {
   SiWindows,
   SiFlutter,
   SiDart ,
+  SiGooglecloud,
 } from "react-icons/si";
 
 import {
@@ -41,7 +42,10 @@ import {
   DiBootstrap,
   DiReact,
   DiJava,
+  DiGo ,
 } from "react-icons/di";
+import { RiPulseFill } from "react-icons/ri";
+
 
 interface CardProps {
   heading: string;
@@ -201,6 +205,13 @@ export default function Skiil() {
             }
             href={"#"}
           />
+              <Card
+            heading={"Go"}
+            icon={
+              <Icon as={DiGo} w={10} h={10} _hover={{ color: "#087dd7" }} />
+            }
+            href={"#"}
+           />
         </Flex>
       </Container>
 
@@ -237,6 +248,39 @@ export default function Skiil() {
         </Flex>
       </Container>
       
+      <Heading
+        fontSize={{ base: "2xl", sm: "4xl" }}
+        fontWeight={"bold"}
+        textAlign="center"
+        marginTop="2em"
+      >
+        API management
+      </Heading>
+
+      <Container maxW={"5xl"} mt={12}>
+        <Flex flexWrap="wrap" gridGap={6} justify="center">
+          <Card
+            heading={"Apigee"}
+            icon={
+              <Icon as={SiGooglecloud } w={10} h={10} _hover={{ color: "#DB4437" }} />
+            }
+            href={"#"}
+          />
+          <Card
+            heading={"WSO2"}
+            icon={
+              <Icon
+                as={RiPulseFill}
+                w={10}
+                h={10}
+                _hover={{ color: "#f47b20" }}
+              />
+            }
+            href={"#"}
+          />
+        </Flex>
+      </Container>
+
       <Heading
         fontSize={{ base: "2xl", sm: "4xl" }}
         fontWeight={"bold"}
