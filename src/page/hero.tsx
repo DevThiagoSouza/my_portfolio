@@ -74,7 +74,7 @@ export default function Hero() {
                     "Willkommen",
                     1000, 
                     "欢迎 ",
-                    1400, 
+                    1500, 
                     "ようこそ",
                     1000, 
                     "환영합니다",
